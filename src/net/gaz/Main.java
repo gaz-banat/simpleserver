@@ -1,6 +1,5 @@
 package net.gaz;
 
-import javax.sound.sampled.Line;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -19,9 +18,8 @@ public class Main {
     }
 
 
-
     public static void connectToServer() {
-        try(ServerSocket serverSocket = new ServerSocket(9991)) {
+        try(ServerSocket serverSocket = new ServerSocket(80)) {
             Socket connectionSocket = serverSocket.accept();
 
             InputStream inputToServer = connectionSocket.getInputStream();

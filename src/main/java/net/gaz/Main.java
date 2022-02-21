@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Scanner;
@@ -19,7 +20,7 @@ public class Main {
 
 
     public static void connectToServer() {
-        try(ServerSocket serverSocket = new ServerSocket(80)) {
+        try(ServerSocket serverSocket = new ServerSocket(8088)) {
             Socket connectionSocket = serverSocket.accept();
 
             InputStream inputToServer = connectionSocket.getInputStream();
@@ -35,12 +36,14 @@ public class Main {
 
             while(!done && scanner.hasNextLine()) {
                 String line = scanner.nextLine();
+                InetSocketAddress socketAddress = (InetSocketAddress) connectionSocket.getRemoteSocketAddress();
+                String clientIPAddress = socketAddress.getAddress().getHostAddress();
                 if(line.toLowerCase().trim().equals("peace")) {
                     done = true;
-                    continue;
                 } else {
                     String capLine = line.toUpperCase();
-                    serverPrintOut.println("Capitilized echo from Gazzez Server: " + capLine);
+                    serverPrintOut.println("Client IP address is " + clientIPAddress + " || " +
+                            "Capitilized echo from Gazzez Server: " + capLine);
                 }
             }
         } catch (IOException e) {

@@ -1,6 +1,6 @@
 FROM openjdk:latest
 
-COPY ./SimpleServer.jar /tmp
+COPY ./out/artifacts/SimpleServer_jar/SimpleServer.jar /tmp
 
 EXPOSE 80
 

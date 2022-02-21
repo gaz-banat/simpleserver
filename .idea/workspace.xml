@@ -5,20 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5cc34323-06a7-4774-9e55-ba738b2b379a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/SimpleServer_jar/SimpleServer.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleServer/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SimpleServer/net/gaz/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/gaz/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/gaz/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
